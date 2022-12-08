@@ -1,0 +1,87 @@
+body {
+                  margin: auto;
+            }
+
+            p,
+            h1 {
+                  font-family: Arial;
+            }
+
+            .navigation-bar {
+                  position: fixed;
+                  top: 0;
+                  width: 90%;
+                  background-color: #000;
+                  padding-left: 5%;
+                  padding-right: 5%;
+            }
+
+            .navigation-bar ul {
+                  display: inline-block;
+            }
+
+            .navigation-bar ul a {
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 2px 4px;
+                  text-decoration: none;
+                  font-family: Arial;
+            }
+
+            .header {
+                  background-color: #c6bfbf;
+                  position: relative;
+                  top: 50px;
+                  width: 90%;
+                  padding-top: 20px;
+                  padding-left: 5%;
+                  padding-right: 5%;
+                  padding-bottom: 20px;
+            }
+
+            .flex-box-content {
+                  position: relative;
+                  top: 50px;
+                  display: flex;
+                  align-items: stretch;
+                  justify-content: space-between;
+                  width: 90%;
+                  padding-top: 20px;
+                  padding-left: 5%;
+                  padding-right: 5%;
+                  padding-bottom: 20px;
+            }
+
+            .paragraph,
+            .paragraph2 {
+                  margin-right: 40px;
+            }
+
+            .footer {
+                  position: fixed;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  bottom: 0;
+                  width: 90%;
+                  background-color: #0b4d14;
+                  color: white;
+                  padding-left: 5%;
+                  padding-right: 5%;
+            }
+
+            .footer ul {
+                  display: inline-block;
+                  padding-left: 20px;
+                  padding-right: 20px;
+            }
+
+            .footer ul a {
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 2px 4px;
+                  text-decoration: none;
+                  font-family: Arial;
+            }
