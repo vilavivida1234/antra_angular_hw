@@ -100,18 +100,19 @@ console.log(findLongestWord("Web Development Tutorial"));
 // Example string: 'The quick brown fox'
 // Expected Output: 5
 
-function findLongestWord(str) {
-  let longest = "";
-
-  for (let word of str.split(" ")) {
-    if (word.length > longest.length) {
-      longest = word;
+function countVowels(str) {
+  let vowels = ["a", "e", "i", "o", "u"];
+  let vowelsSet = new Set(vowels);
+  let output = 0;
+  for (let char of str) {
+    if (vowelsSet.has(char)) {
+      output++;
     }
   }
-  return longest;
+  return output;
 }
 
-console.log(findLongestWord("Web Development Tutorial"));
+console.log(countVowels("The quick brown fox"));
 
 // 8. Write a JavaScript function that accepts a number as a parameter and check the number is
 // prime or not.
