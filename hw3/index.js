@@ -151,20 +151,16 @@ let a = () => {};
 console.log(checkType(a));
 
 // 10. Write a JavaScript function which returns the n rows by n columns identity matrix.
-function measureMatrix(matrix) {
-  let m = matrix.length;
-  let n = matrix[0].length;
+function createMatrix(n) {
+  let output = new Array(n).fill(0);
 
-  return `The matrix has ${m} rows and ${n} cols`;
+  for (let i = 0; i < n; i++) {
+    output[i] = new Array(n).fill(0);
+  }
+  return output;
 }
 
-let matrix = [
-  ["0", "0", "1", "1", "0"],
-  ["1", "1", "0", "1", "0"],
-  ["1", "1", "0", "0", "0"],
-  ["0", "0", "0", "0", "0"],
-];
-console.log(measureMatrix(matrix));
+console.log(createMatrix(4));
 
 // 11. Write a JavaScript function which will take an array of numbers stored and find the second
 // lowest and second greatest numbers, respectively.
